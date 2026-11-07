@@ -7,7 +7,7 @@ export function useProductos() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    let activo = true;
+    const activo = true;
 
     fetchProductos()
       .then((lista) => {
